@@ -3,7 +3,7 @@ name: Build and Push Docker Image
 on:
   push:
     branches:
-      - main  # Cambia 'main' por tu rama principal si es diferente
+      - master  # Cambia 'main' por tu rama principal si es diferente
 
 jobs:
   build:
