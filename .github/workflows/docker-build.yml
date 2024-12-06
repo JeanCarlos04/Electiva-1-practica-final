@@ -24,10 +24,12 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
+      # Build Docker image
       - name: Build Docker image
         run: |
-          docker build -t nombre-de-tu-imagen .
+          docker build -t jeancarlos04/proyecto-web-web:latest .
 
+      # Push Docker image
       - name: Push Docker image to Docker Hub
         run: |
-          docker push nombre-de-tu-imagen
+          docker push jeancarlos04/proyecto-web-web:latest
